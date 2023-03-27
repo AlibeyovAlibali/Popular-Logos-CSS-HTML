@@ -1,0 +1,119 @@
+:root{
+    --logo-size-:380px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: #000;
+}
+.TwitterLogo{
+    display: block;
+    position: relative;
+    width: var(--logo-size-);
+    height: var(--logo-size-);
+    margin: auto;
+}
+.TwitterLogo div{
+    position: absolute;
+    border-radius: 50%;
+}
+.head{
+    width: 120px;
+    height: 120px;
+    background: #1d9bf0;
+    left: 173px;
+    top: 68px;
+    z-index: 5;
+}
+.body{
+    width: 300px;
+    height: 300px;
+    background: #1d9bf0;
+}
+.body-none{
+    width: 220px;
+    height: 220px;
+    background: #000;
+    top: 43px;
+    left: -40px;
+}
+.beak-top{
+    width: 170px;
+    height: 170px;
+    background: #1d9bf0;
+    left: 173px;
+    top: -25px;
+}
+.beak-top-none{
+    width: 250px;
+    height: 250px;
+    background: #000;
+    left: 147px;
+    top: -136px;
+}
+.beak-bottom{
+    width: 100px;
+    height: 100px;
+    background: #1d9bf0;
+    left: 230px;
+    top: 15px;
+}
+.beak-bottom-none{
+    width: 160px;
+    height: 160px;
+    background: #000;
+    left: 205px;
+    top: -65px;
+}
+.wing-top{
+    width: 170px;
+    height: 140px;
+    background: #1d9bf0;
+    z-index: 2;
+    left: 65px;
+    top: 18px;
+}
+.wing-top-none{
+    width:300px;
+    height: 280px;
+    background: #000;
+    top: -158px;
+    left: 44px;
+    z-index: 2;
+}
+.wing-middle{
+    width: 140px;
+    height: 110px;
+    background: #1d9bf0;
+    top: 100px;
+    left: 70px;
+    z-index: 1;
+}
+.wing-middle-none{
+    width: 250px;
+    height: 230px;
+    background: #000;
+    top: -75px;
+    left: 20px;
+    z-index: 1;
+}
+.wing-bottom{
+    width: 100px;
+    height: 90px;
+    background: #1d9bf0;
+    top: 160px;
+    left: 88px;
+}
+.wing-bottom-none{
+    width: 90px;
+    height: 70px;
+    background: #000;
+    top: 140px;
+    left: 69px;
+}

@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(40, 28, 28);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.child{
+    width: 400px;
+    height: 140px;
+    border-radius: 80px;
+    background-color: red;
+    transform: rotate(-27deg);
+    margin: 2%;
+
+}
+.triangle{
+    position: absolute;
+    z-index: 2;
+    margin-left: 2rem;
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-left: 100px solid rgb(255, 255, 255);
+}

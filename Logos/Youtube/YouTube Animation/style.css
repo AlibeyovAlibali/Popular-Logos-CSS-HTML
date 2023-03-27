@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px; 
+    height: 300px;
+    background-color: red;
+    border-radius:50px ;
+    transition: all 0.7s;
+}
+.Logo:after{
+    content: '';
+    display: block;
+    width: 450px; 
+    height: 300px;
+    border-radius: 60px;
+    position: absolute;
+    border-left: 10px solid red;
+    border-right: 10px solid red;
+    transition: 0.7s;
+}
+.Logo:hover{
+    width: 500px;
+    height: 330px;
+}
+.Logo:hover .triangle{
+    border-top: 85px solid transparent;
+    border-bottom: 85px solid transparent;
+    border-left: 120px solid rgb(255, 255, 255);
+    animation-name: shake;
+    animation-duration: 3s;
+    animation-delay: 0.4s;
+}
+
+@keyframes shake {
+    0%{
+        transform: translate(0px,0px);
+        opacity: 1;
+    }
+    25%{
+        transform: translate(200px,0px);
+        opacity: 0;
+    }
+    50%{
+        transform: translate(350px,0px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px,0px);
+        opacity: 1;
+    }
+}
+.Logo:hover:after{
+    width: 600px;
+    height: 400px;
+}
+.triangle{
+    width: 0; 
+    height: 0; 
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-left: 100px solid rgb(255, 255, 255);
+    transition: all 0.7s;
+}

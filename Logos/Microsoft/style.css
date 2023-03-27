@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(35, 30, 30);
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid: center center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 110px;
+    max-height: 220px;
+}
+.square{
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+    min-height: 100px;
+}
+.red{
+    background-color: red;
+    box-shadow: 0 0 20px 7px rgba(255, 0, 0, 0.5);
+    margin: 5px;
+    animation-name: blurleft;
+    animation-duration: 2.4s;
+    animation-delay: 4s;
+    animation-timing-function: cubic-bezier(1, 0.01, 1, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+@keyframes blurleft{
+    from{
+        box-shadow: 0 0 20px 7px rgba(255, 0, 0, 0.5);
+        margin: 5px;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+    }
+    to{
+        box-shadow: 0 0 25px 9px rgba(255, 0, 0, 0.65);
+        margin: 0px;
+        top: -5px;
+        left: -10px;
+        width: 120px;
+        height: 120px;
+    }
+}
+.green{
+    background-color: green;
+    margin: 5px;
+    box-shadow: 0 0 20px 6px rgba(0, 128, 0, 0.5);
+}
+.blue{
+    background-color: blue;
+    margin: 5px;
+    box-shadow: 0 0 20px 6px rgba(0, 0, 255, 0.5);
+}
+.yellow{
+    background-color: yellow;
+    box-shadow: 0 0 20px 6px rgba(255, 255, 0, 0.5);
+    margin: 5px;
+    animation-name: blurright;
+    animation-duration: 2.4s;
+    animation-delay: 4s;
+    animation-timing-function: cubic-bezier(1, 0.01, 1, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+@keyframes blurright{
+    from{
+        box-shadow: 0 0 20px 6px rgba(255, 255, 0, 0.5);
+        margin: 5px;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+    }
+    to{
+        box-shadow: 0 0 25px 8px rgba(255, 255, 0, 0.65);
+        margin: 0px;
+        left: 10px;
+        top: 5px;
+        width: 120px;
+        height: 120px;
+    }
+}

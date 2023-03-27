@@ -1,0 +1,55 @@
+:root{
+    --logo-height- :300px;
+    --logo-width- :60px;
+    --tail-size- :250px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: black;
+}
+.TikTokLogo{
+    width: var(--logo-height-);
+    height: var(--logo-height-);
+    position: relative;
+    margin: auto;
+    filter: drop-shadow(15px 16px 0 rgba(255, 0, 0, 0.842));
+}
+.noise{
+    position: absolute;
+    left: 120px;
+    bottom: 150px;
+    width: var(--logo-height-);
+    height: var(--logo-height-);
+    border-radius: 50% !important;
+    border: var(--logo-width-) solid rgb(249, 249, 249);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(-45deg);
+}
+.body{
+    position: absolute;
+    left: 120px;
+    width: var(--logo-width-);
+    height: var(--logo-height-);
+    background: rgb(255, 255, 255);
+}
+.tail{
+    position: absolute;
+    top: 175px;
+    right: 120.2px;
+    width: var(--tail-size-);
+    height: var(--tail-size-);
+    border-radius: 50% !important;
+    border: var(--logo-width-) solid rgb(255, 255, 255);
+    border-right-color: transparent;
+    transform: rotate(-45deg);
+}

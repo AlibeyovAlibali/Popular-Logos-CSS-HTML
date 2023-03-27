@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px; 
+    height: 300px;
+    background-color: red;
+    box-shadow: 0 0 20px 7px rgb(136, 10, 10);
+    border-radius:50px ;
+    transition: 0.7s;
+}
+.triangle{
+    width: 0; 
+    height: 0; 
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-left: 100px solid rgb(255, 255, 255);
+    transition: 0.7s;
+}
+
